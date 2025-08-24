@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>نموذج تسجيل </title>
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
+<body>
+  <canvas id="particles"></canvas>
+  <div class="container">
+    <h2 id="form-title">نموذج التسجيل</h2><!-- Language Selector -->
+<div class="form-group">
+  <label for="language">🌐 اختر اللغة</label>
+  <select id="language">
+    <option value="ar">العربية</option>
+    <option value="en">English</option>
+    <option value="jp">日本語</option>
+  </select>
+</div>
+
+<form id="registerForm">
+  <div class="form-group">
+    <label id="label-name" for="name">الاسم</label>
+    <input type="text" id="name" placeholder="اكتب اسمك">
+    <div id="error-name" class="error"></div>
+  </div>
+
+  <div class="form-group">
+    <label id="label-email" for="email">البريد الإلكتروني</label>
+    <input type="email" id="email" placeholder="example@mail.com">
+    <div id="error-email" class="error"></div>
+  </div>
+
+  <div class="form-group">
+    <label id="label-phone" for="phone">رقم الهاتف</label>
+    <input type="tel" id="phone" placeholder="+20...">
+    <div id="error-phone" class="error"></div>
+  </div>
+
+  <div class="form-group">
+    <label id="label-dob">تاريخ الميلاد</label>
+    <div style="display:flex; gap:5px;">
+      <select id="day"></select>
+      <select id="month"></select>
+      <select id="year"></select>
+    </div>
+    <div class="age-box" id="age"></div>
+  </div>
+
+  <div class="form-group">
+    <label id="label-password" for="password">كلمة المرور</label>
+    <input type="password" id="password">
+    <div id="error-password" class="error"></div>
+  </div>
+
+  <div class="form-group">
+    <label id="label-confirm" for="confirm">تأكيد كلمة المرور</label>
+    <input type="password" id="confirm">
+    <div id="error-confirm" class="error"></div>
+  </div>
+
+  <button type="submit" id="submitBtn">تسجيل</button>
+</form>
+
+  </div>
+  </body>
+</html>
+<script src="script.js"></script>
